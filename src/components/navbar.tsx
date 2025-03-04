@@ -51,7 +51,7 @@ export const Navbar = () => {
             <img
               alt="Logo"
               height="48" // Increased size for the logo
-              src="pictures/color-logo.PNG" // Replace with your logo image path
+              src="/pictures/color-logo.PNG" // Replace with your logo image path
               width="48" // Increased size for the logo
             />
           </Link>

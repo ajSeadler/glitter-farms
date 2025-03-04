@@ -3,6 +3,7 @@ import { button as buttonStyles } from "@heroui/theme";
 
 import DefaultLayout from "@/layouts/default";
 import AboutUs from "@/components/AboutUs";
+import HeroHorses from "@/components/HeroHorses";
 
 export default function IndexPage() {
   return (
@@ -32,7 +33,8 @@ export default function IndexPage() {
             </div>
           </div>
         </div>
-        <AboutUs />
+        {/* <AboutUs /> */}
+        <HeroHorses />
 
         {/* Learn More Button */}
       </section>

@@ -21,7 +21,8 @@ const ParticlesBackground = () => {
   }, []);
 
   // Particle loaded callback function
-  const particlesLoaded = async (container?: Container): Promise<void> => {};
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const particlesLoaded = async (_container?: Container): Promise<void> => {};
 
   // Particle options definition
   const options: ISourceOptions = useMemo(

@@ -53,7 +53,7 @@ const AboutUs = () => {
                 key={index}
                 className="flex flex-col items-center text-center"
               >
-                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gray-300 dark:bg-gray-700 rounded-full mb-4"></div>
+                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gray-300 dark:bg-gray-700 rounded-full mb-4" />
                 <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                   {value.title}
                 </h4>
@@ -89,7 +89,7 @@ const AboutUs = () => {
                 key={index}
                 className="flex flex-col items-center text-center"
               >
-                <div className="w-32 h-32 sm:w-40 sm:h-40 bg-gray-300 dark:bg-gray-700 rounded-full mb-4"></div>
+                <div className="w-32 h-32 sm:w-40 sm:h-40 bg-gray-300 dark:bg-gray-700 rounded-full mb-4" />
                 <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
                   {horse.name}
                 </h4>
