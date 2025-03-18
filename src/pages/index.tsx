@@ -1,14 +1,27 @@
-import { Link } from "@heroui/link";
+import { useRef } from "react";
 import { button as buttonStyles } from "@heroui/theme";
+import { Button } from "@heroui/button";
 
 import DefaultLayout from "@/layouts/default";
-import AboutUs from "@/components/AboutUs";
 import HeroHorses from "@/components/HeroHorses";
 
 export default function IndexPage() {
+  // Create a reference to the HeroHorses section
+  const heroHorsesRef = useRef<HTMLDivElement>(null);
+
+  // Function to scroll to the HeroHorses section
+  const handleScroll = () => {
+    if (heroHorsesRef.current) {
+      heroHorsesRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <DefaultLayout>
-      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+      <section className="flex flex-col items-center justify-center gap-4 py-20 md:py-20">
         <div className="h-screen">
           {/* Image */}
           <div className="flex flex-col items-center justify-center gap-0">
@@ -18,25 +31,25 @@ export default function IndexPage() {
               src="/pictures/glitter farms round logo transparent-17.PNG"
             />
             <div className="">
-              <Link
-                isExternal
+              <Button
                 className={
                   buttonStyles({
                     radius: "full",
                     variant: "shadow",
-                  }) + " text-lg py-6 px-9"
-                } // Added text size and padding to make the button larger
-                href="#learn-more" // Replace with the actual link
+                  }) + " text-lg py-6 px-9 bg-[#bb9557] text-white"
+                }
+                onClick={handleScroll} // Use the handleScroll function on button click
               >
                 Learn More
-              </Link>
+              </Button>
             </div>
           </div>
         </div>
-        {/* <AboutUs /> */}
-        <HeroHorses />
 
-        {/* Learn More Button */}
+        {/* HeroHorses Section with ref */}
+        <div ref={heroHorsesRef} id="hero-horses">
+          <HeroHorses />
+        </div>
       </section>
     </DefaultLayout>
   );

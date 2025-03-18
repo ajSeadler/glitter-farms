@@ -8,15 +8,16 @@ export const siteConfig = {
       label: "Home",
       href: "/",
     },
+    {
+      label: "Horses",
+      href: "/horses",
+    },
 
     {
       label: "About",
       href: "/about",
     },
-    {
-      label: "Horses",
-      href: "/horses",
-    },
+
     {
       label: "Photos",
       href: "/photos",
@@ -31,10 +32,23 @@ export const siteConfig = {
       label: "Home",
       href: "/",
     },
+    {
+      label: "Horses",
+      href: "/horses",
+    },
 
     {
       label: "About",
       href: "/about",
+    },
+
+    {
+      label: "Photos",
+      href: "/photos",
+    },
+    {
+      label: "Contact",
+      hred: "/contact",
     },
   ],
   links: {
